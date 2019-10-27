@@ -1,0 +1,31 @@
+server:
+  port: 8098
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.125:3306/esdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 12345678
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  elasticsearch:
+    jest:
+      uris: http://192.168.1.125:9200
+
+dubbo:
+  application:
+    name: es-search-service
+  registry:
+    address: zookeeper://192.168.1.125:2181
+  scan:
+    base-packages: com.jd
+  protocol:
+    name: dubbo
+  consumer:
+    check: false
+
+
+
+
+

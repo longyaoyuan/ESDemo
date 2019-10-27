@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.essearchservice.mapper.SkuInfoMapper">
+    <resultMap id="BaseResultMap" type="com.jd.essearchapi.entity.SkuInfo">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="spu_id" jdbcType="INTEGER" property="spuId" />
+        <result column="price" jdbcType="DOUBLE" property="price" />
+        <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+        <result column="sku_desc" jdbcType="VARCHAR" property="skuDesc" />
+        <result column="weight" jdbcType="DOUBLE" property="weight" />
+
+        <result column="tm_id" jdbcType="INTEGER" property="tmId" />
+        <result column="catalog3_id" jdbcType="INTEGER" property="catalog3Id" />
+        <result column="sku_default_img" jdbcType="INTEGER" property="skuDefaultImg" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, spu_id, price, sku_name, sku_desc, weight, tm_id,catalog3_id,sku_default_img
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from sku_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+
+<!--    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+<!--    delete from adminlog-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </delete>-->
+<!--    <insert id="insert" parameterType="com.shop.shoporder.entity.AdminLog">-->
+<!--    insert into adminlog (id, obj_type, obj_id, -->
+<!--      remark, addTime, UID, -->
+<!--      AID)-->
+<!--    values (#{id,jdbcType=INTEGER}, #{objType,jdbcType=INTEGER}, #{objId,jdbcType=INTEGER}, -->
+<!--      #{remark,jdbcType=VARCHAR}, #{addtime,jdbcType=TIMESTAMP}, #{uid,jdbcType=INTEGER}, -->
+<!--      #{aid,jdbcType=INTEGER})-->
+<!--  </insert>-->
+<!--    <insert id="insertSelective" parameterType="com.shop.shoporder.entity.AdminLog">-->
+<!--        insert into adminlog-->
+<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--            <if test="id != null">-->
+<!--                id,-->
+<!--            </if>-->
+<!--            <if test="objType != null">-->
+<!--                obj_type,-->
+<!--            </if>-->
+<!--            <if test="objId != null">-->
+<!--                obj_id,-->
+<!--            </if>-->
+<!--            <if test="remark != null">-->
+<!--                remark,-->
+<!--            </if>-->
+<!--            <if test="addtime != null">-->
+<!--                addTime,-->
+<!--            </if>-->
+<!--            <if test="uid != null">-->
+<!--                UID,-->
+<!--            </if>-->
+<!--            <if test="aid != null">-->
+<!--                AID,-->
+<!--            </if>-->
+<!--        </trim>-->
+<!--        <trim prefix="values (" suffix=")" suffixOverrides=",">-->
+<!--            <if test="id != null">-->
+<!--                #{id,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="objType != null">-->
+<!--                #{objType,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="objId != null">-->
+<!--                #{objId,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="remark != null">-->
+<!--                #{remark,jdbcType=VARCHAR},-->
+<!--            </if>-->
+<!--            <if test="addtime != null">-->
+<!--                #{addtime,jdbcType=TIMESTAMP},-->
+<!--            </if>-->
+<!--            <if test="uid != null">-->
+<!--                #{uid,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="aid != null">-->
+<!--                #{aid,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--        </trim>-->
+<!--    </insert>-->
+<!--    <update id="updateByPrimaryKeySelective" parameterType="com.shop.shoporder.entity.AdminLog">-->
+<!--        update adminlog-->
+<!--        <set>-->
+<!--            <if test="objType != null">-->
+<!--                obj_type = #{objType,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="objId != null">-->
+<!--                obj_id = #{objId,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="remark != null">-->
+<!--                remark = #{remark,jdbcType=VARCHAR},-->
+<!--            </if>-->
+<!--            <if test="addtime != null">-->
+<!--                addTime = #{addtime,jdbcType=TIMESTAMP},-->
+<!--            </if>-->
+<!--            <if test="uid != null">-->
+<!--                UID = #{uid,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="aid != null">-->
+<!--                AID = #{aid,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--        </set>-->
+<!--        where id = #{id,jdbcType=INTEGER}-->
+<!--    </update>-->
+<!--    <update id="updateByPrimaryKey" parameterType="com.shop.shoporder.entity.AdminLog">-->
+<!--    update adminlog-->
+<!--    set obj_type = #{objType,jdbcType=INTEGER},-->
+<!--      obj_id = #{objId,jdbcType=INTEGER},-->
+<!--      remark = #{remark,jdbcType=VARCHAR},-->
+<!--      addTime = #{addtime,jdbcType=TIMESTAMP},-->
+<!--      UID = #{uid,jdbcType=INTEGER},-->
+<!--      AID = #{aid,jdbcType=INTEGER}-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </update>-->
+</mapper>

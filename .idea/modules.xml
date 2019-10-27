@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ESDemo_pro.iml" filepath="$PROJECT_DIR$/ESDemo_pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-es-search-api/jd-es-search-api.iml" filepath="$PROJECT_DIR$/jd-es-search-api/jd-es-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-es-search-common/jd-es-search-common.iml" filepath="$PROJECT_DIR$/jd-es-search-common/jd-es-search-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-es-search-interface/jd-es-search-interface.iml" filepath="$PROJECT_DIR$/jd-es-search-interface/jd-es-search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-es-search-service/jd-es-search-service.iml" filepath="$PROJECT_DIR$/jd-es-search-service/jd-es-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-es-search-web/jd-es-search-web.iml" filepath="$PROJECT_DIR$/jd-es-search-web/jd-es-search-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-essearch-parent/jd-essearch-parent.iml" filepath="$PROJECT_DIR$/jd-essearch-parent/jd-essearch-parent.iml" />
+    </modules>
+  </component>
+</project>
