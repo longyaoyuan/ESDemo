@@ -1,1 +1,3 @@
 com/jd/essearchapi/entity/SkuInfo.class
+com/jd/essearchapi/entity/SkuInfoResult.class
+com/jd/essearchapi/entity/SkuInfoParams.class
